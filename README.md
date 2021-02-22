@@ -29,7 +29,7 @@ Then install Drupal with the following command:
 ```bash
 make drupal
 ```
-You need to continue the installation in your web browser. Install script should print out the url where to connect.
+You need to continue the installation in your web browser. The install script should print out the url where to connect.
 
 The values are not pre-populated, so fill them with the same information you have in your `.env` file. NOTE! To change database hostname from localhost to something else, you need to click on the "Show advanced" option.
 
@@ -37,7 +37,7 @@ After the installation is done, check the created hash salt:
 ```bash
 grep SITE_HASH_SALT src/web/sites/default/settings.php
 ```
-Put this value to your `.env` file. Then copy the generic `settings.php` file over the generated one:
+Put this value to your `.env` file. Then copy the included `settings.php` file over the generated one:
 ```bash
 chmod +w src/web/sites/default/settings.php
 cp utils/settings.php src/web/sites/default/settings.php
