@@ -28,7 +28,8 @@ services:
       PUID: $PUID
       PGID: $PGID
       SITE_URL: $PROJECT_BASE_URL
-      CIRCLECI_API_KEY: CIRCLECI_API_KEY
+      CIRCLECI_API_KEY: $CIRCLECI_API_KEY
+      SITE_HASH_SALT: $SITE_HASH_SALT
     volumes:
       - ./src:/var/www/html
     labels:

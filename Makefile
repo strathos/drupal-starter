@@ -83,6 +83,12 @@ drupal:
 	@echo
 	@echo "Drupal installed with Composer. Go to: http://$(PROJECT_BASE_URL):$(PROJECT_PORT) to continue"
 
+## pull	:	Pull images.
+.PHONY: pull
+pull:
+	@echo "Pulling images..."
+	@docker-compose pull || true
+
 ## drush	:	Executes `drush` command in a specified `DRUPAL_ROOT` directory (default is `/var/www/html/web`).
 ##		To use "--flag" arguments include them in quotation marks.
 ##		For example: make drush "watchdog:show --type=cron"
