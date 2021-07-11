@@ -1,0 +1,11 @@
+db
+db-init
+mariadb-init
+src/web/sites/default/files
+src/vendor
+src/web/themes/accessibility/node_modules
+src/web/core/
+src/web/modules/contrib/
+src/web/themes/contrib/
+src/web/profiles/contrib/
+src/web/libraries/
