@@ -35,7 +35,7 @@ The values are not pre-populated, so fill them with the same information you hav
 
 After the installation is done, check the created hash salt:
 ```bash
-grep SITE_HASH_SALT src/web/sites/default/settings.php
+grep hash_salt src/web/sites/default/settings.php
 ```
 Put this value to your `.env` file. Then copy the included `settings.php` file over the generated one:
 ```bash
